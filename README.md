@@ -21,6 +21,10 @@ lake_WS_TP/
 │   ├── data.csv                   # Raw dataset
 │   ├── prediction_results_cleaned.csv
 │   └── total.xlsx                 # Original data file
+├── figure/                        # Results and visualization directory
+│   ├── PDE.png                    # Partial Dependence Effect plots
+│   ├── shap.png                   # SHAP analysis results
+│   └── test_validaiton.png        # Model validation results
 ├── model/                         # Model directory
 │   └── tabpfn-v2-regressor.ckpt  # Pre-trained model checkpoint
 ├── code/                          # Source code directory
@@ -116,6 +120,23 @@ python partial_dependence_complete_fixed.py
 - **Visualization**: All plots use Arial font and English labels
 - **Code Style**: Direct, Jupyter notebook-friendly code structure with minimal complex function definitions
 
+## Results
+
+### Model Validation
+The model performance and validation results demonstrate the effectiveness of the TabPFN approach for lake water storage prediction:
+
+![Model Validation Results](figure/test_validaiton.png)
+
+### SHAP Analysis
+SHAP (SHapley Additive exPlanations) analysis reveals the feature importance and contribution of each variable to the model predictions:
+
+![SHAP Analysis Results](figure/shap.png)
+
+### Partial Dependence Effects
+Partial dependence plots show how individual features affect the model predictions while accounting for the average effects of all other features:
+
+![Partial Dependence Effects](figure/PDE.png)
+
 ## Model Performance
 
 The model analyzes the relationship between environmental factors and lake water storage changes, providing insights into:
@@ -123,6 +144,8 @@ The model analyzes the relationship between environmental factors and lake water
 - Human activity effects on lake systems
 - Seasonal and temporal water storage patterns
 - Feature importance for water volume prediction
+- Quantitative assessment of variable contributions through SHAP analysis
+- Non-linear relationships captured through partial dependence analysis
 
 ## Contributing
 
