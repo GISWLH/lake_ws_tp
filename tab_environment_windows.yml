@@ -1,0 +1,35 @@
+name: tab
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.16
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - scipy
+  - seaborn
+  - jupyter
+  - ipykernel
+  - ipython
+  - cartopy
+  - gdal
+  - fiona
+  - shapely
+  - rasterio  
+  - xarray
+  - plotly
+  - pip
+  - pip:
+      - tabpfn==2.0.9
+      - tabpfn-extensions==0.0.4
+      - shap==0.47.2
+      - catboost==1.2.8
+      - xgboost==3.0.1
+      - torch
+      - hyperopt==0.2.7
+      - rioxarray==0.19.0
+      - cmaps==2.0.1
+      - mplotutils==0.6.0
+      - einops==0.8.1
