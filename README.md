@@ -1,3 +1,7 @@
+<!-- readme-visual-refresh:banner -->
+![lake_ws_tp — hand-drawn project banner](assets/readme/banner.svg)
+<!-- /readme-visual-refresh:banner -->
+
 # Lake Water Storage Attribution Model
 
 ## Project Overview
@@ -168,3 +172,7 @@ This project follows a Jupyter notebook-oriented development approach with empha
 - TabPFN development team for the pre-trained model
 - Environmental data providers
 - Research community contributions
+
+<!-- readme-visual-refresh:artwork-source -->
+[Editable banner artwork · Excalidraw](assets/readme/banner.excalidraw)
+<!-- /readme-visual-refresh:artwork-source -->
